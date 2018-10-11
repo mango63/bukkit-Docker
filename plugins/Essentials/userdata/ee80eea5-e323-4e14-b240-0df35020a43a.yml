@@ -1,0 +1,22 @@
+geolocation: N/A
+lastAccountName: killerx525
+timestamps:
+  login: 1478149970525
+  logout: 1478150654236
+  lastteleport: 1478149720997
+ipAddress: 10.18.12.11
+lastlocation:
+  world: world
+  x: 41.5
+  y: 64.0
+  z: 66.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: plotworld
+  x: -25.977613054190012
+  y: 65.0
+  z: 10.14073354021648
+  yaw: 330.59982
+  pitch: -13.499999
+afk: false

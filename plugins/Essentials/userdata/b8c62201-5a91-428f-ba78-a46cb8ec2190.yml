@@ -1,0 +1,22 @@
+geolocation: N/A
+lastAccountName: Mango63
+timestamps:
+  login: 1539170231858
+  lastteleport: 1539170330976
+  logout: 1507306103207
+ipAddress: 127.0.0.1
+lastlocation:
+  world: plotworld
+  x: -45.93579301014948
+  y: 83.27625908011551
+  z: -25.427094355585737
+  yaw: 199.20003
+  pitch: 37.199917
+afk: false
+logoutlocation:
+  world: plotworld
+  x: 74.30774570747128
+  y: 69.16423127306484
+  z: 45.89781660284958
+  yaw: 75.30011
+  pitch: 33.2999

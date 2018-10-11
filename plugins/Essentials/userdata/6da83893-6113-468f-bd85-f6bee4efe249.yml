@@ -1,0 +1,20 @@
+geolocation: N/A
+lastAccountName: 18Magic
+timestamps:
+  login: 1478304767544
+  logout: 1478304760791
+ipAddress: 10.16.12.214
+lastlocation:
+  world: world
+  x: 41.5
+  y: 64.0
+  z: 66.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: plotworld
+  x: -68.69999998807907
+  y: 66.7366199981145
+  z: -58.36459321283754
+  yaw: 25.645905
+  pitch: 6.0000706

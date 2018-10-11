@@ -1,0 +1,20 @@
+geolocation: N/A
+lastAccountName: Agnostos
+timestamps:
+  login: 1478139878724
+  logout: 1478140016294
+ipAddress: 10.16.12.233
+lastlocation:
+  world: world
+  x: 41.5
+  y: 64.0
+  z: 66.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: plotworld
+  x: -26.72788567766471
+  y: 72.61686614352553
+  z: 6.705832715634126
+  yaw: 242.25024
+  pitch: 69.750046
