@@ -28,4 +28,12 @@ aliases:
   done:
   - plot done $1-
   - customtext done $1-
+  serverbuild:
+  - wb dynmap off $1-
+  - wb plotworld shape square $1-
+  - wb plotworld set 500 spawn $1-
+  - wb world set 1000 spawn $1-
+  - wb fill $1-
+  - wb fill confirm $1 -
+  
 unrestricted-advancements: false
