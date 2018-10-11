@@ -1,4 +1,4 @@
 # plugins
-bukkitpluginstesting
 
-random mods testing with docker
+compressed plugins are in the folder
+
