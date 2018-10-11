@@ -34,8 +34,6 @@ aliases:
   - wb shape square $1-
   - wb world set 1000 spawn $1-
   - wb plotworld fill $1-
-  - wb fill confirm $1 -
-  - wb world fill $1-
-  - wb fill confirm $1 -
+  - wb fill confirm $1-
   
 unrestricted-advancements: false
