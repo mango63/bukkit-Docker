@@ -28,9 +28,9 @@ aliases:
   done:
   - plot done $1-
   - customtext done $1-
-  serverbuild:
+  buildplotworld
   - wb dynmap off $1-
-  - wb plotworld set 500 spawn $1-
+  - wb plotworld set 200 spawn $1-
   - wb shape square $1-
   - wb world set 1000 spawn $1-
   - wb plotworld fill $1-
