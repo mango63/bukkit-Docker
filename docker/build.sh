@@ -11,7 +11,7 @@
 
 [[ -f commands.yml ]] ||  wget https://github.com/mango63/plugins/raw/master/commands.yml
 
-[[ -f eual.txt ]] ||  wget https://github.com/mango63/plugins/raw/master/eula.txt
+[[ -f eula.txt ]] ||  wget https://github.com/mango63/plugins/raw/master/eula.txt
 
 [[ -f server.properties ]] ||  wget https://github.com/mango63/plugins/raw/master/server.properties
 
