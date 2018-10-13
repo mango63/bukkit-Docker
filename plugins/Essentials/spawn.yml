@@ -1,4 +1,4 @@
-pawns:
+spawns:
   default:
     world: plotworld
     x: 0.
