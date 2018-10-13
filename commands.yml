@@ -42,4 +42,8 @@ aliases:
   - wb plotworld fill $1-
   - wb fill confirm $1-
   
+  buildrender:
+  - dynmap fullrender plotworld $1-
+  - dynmap fullrender world $1-
+  
 unrestricted-advancements: false
