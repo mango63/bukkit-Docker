@@ -9,4 +9,6 @@ once rendered Dynmap is on <IP>:8123
   
 For players to start building get them to issue the command /start
 
+To change server config do it localy or download and re achive
+
 
