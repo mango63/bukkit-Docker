@@ -20,7 +20,6 @@ groups:
     - essentials.balance
     - essentials.balance.others
     - essentials.balancetop
-    - essentials.build
     - essentials.chat.color
     - essentials.chat.format
     - essentials.chat.shout
@@ -62,4 +61,11 @@ groups:
     - essentials.xmpp
     - essentials.customtext
     - essentials.gamemode
+    worlds:
+      world:
+        permissions: []
+      plotworld:
+        permissions:
+        - essentials.build
+
 schema-version: 1
