@@ -30,9 +30,15 @@ aliases:
   - customtext done $1-
   buildplotworld:
   - wb dynmap off $1-
-  - wb plotworld set 200 spawn $1-
   - wb shape square $1-
-  - wb world set 1000 spawn $1-
+  - wb plotworld set 200 spawn $1-
+  - wb plotworld fill $1-
+  - wb fill confirm $1-
+  
+   buildworld:
+  - wb dynmap off $1-
+  - wb shape round $1-
+  - wb world set 200 spawn $1-
   - wb plotworld fill $1-
   - wb fill confirm $1-
   
