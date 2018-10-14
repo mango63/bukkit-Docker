@@ -9,9 +9,9 @@ RUN echo "yes" | apt-get install -y oracle-java8-installer
 
 RUN adduser bukkit && mkdir /bukkit && chown bukkit:bukkit /bukkit
 WORKDIR /bukkit
-ADD server.properties  commands.yml plugins.zip craftbukkit-*.jar start.sh advertise.py eula.txt /bukkit/
+ADD server.properties  commands.yml craftbukkit-*.jar start.sh advertise.py eula.txt /bukkit/
 
-RUN unzip plugins.zip
+COPY plugins plugins/
 
 # This fails,
 # RUN java -Xms1G -Xmx1G -jar minecraft_server.1.10.2.jar nogui
