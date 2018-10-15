@@ -324,8 +324,8 @@
 /* attribution and scale controls */
 
 .leaflet-container .leaflet-control-attribution {
-	background-color: rgba(255, 255, 255, 0.7);
-	box-shadow: 0 0 5px #bbb;
+	background-color:transparent;
+	box-shadow: 0 0;
 	margin: 0;
 	}
 .leaflet-control-attribution,
