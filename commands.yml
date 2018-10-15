@@ -35,7 +35,7 @@ aliases:
   - wb plotworld fill $1-
   - wb fill confirm $1-
   
-   buildworld:
+  buildworld:
   - wb dynmap off $1-
   - wb shape round $1-
   - wb world set 200 spawn $1-
