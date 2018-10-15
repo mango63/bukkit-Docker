@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 . ../common.sh
@@ -7,14 +6,5 @@
 
 [[ -f craftbukkit-$VERSION.jar ]]  || wget https://cdn.getbukkit.org/craftbukkit/craftbukkit-$VERSION.jar
 
-[[ -f plugins.zip ]] ||  wget https://github.com/mango63/plugins/raw/master/plugins.zip
-
-[[ -f commands.yml ]] ||  wget https://github.com/mango63/plugins/raw/master/commands.yml
-
-[[ -f advertise.py ]] ||  wget https://github.com/mango63/plugins/raw/master/advertise.py
-
-[[ -f eula.txt ]] ||  wget https://github.com/mango63/plugins/raw/master/eula.txt
-
-[[ -f server.properties ]] ||  wget https://github.com/mango63/plugins/raw/master/server.properties
 
 docker_build bukkit
