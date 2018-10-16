@@ -1,5 +1,11 @@
 # Set-up / Notes to Self
 
+NOT WINDOWS FREINDLY (to fix at some point)
+
+to be used with Open Source Lan:
+
+https://github.com/OpenSourceLAN/gameservers-docker
+
 To set up server run the following commands in console, wait till previous has completed before issuing next command:
 1. /buildplotworld
 2. /buildworld
