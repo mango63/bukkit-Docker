@@ -6,10 +6,13 @@ RUN apt-get install nano
 RUN apt-add-repository ppa:webupd8team/java
 RUN apt-get update
 RUN echo "yes" | apt-get install -y oracle-java8-installer
+#RUN echo "yes" | apt-get install git openjdk-8-jre-headless
 
 RUN adduser bukkit && mkdir /bukkit && chown bukkit:bukkit /bukkit
 WORKDIR /bukkit
-ADD server.properties  commands.yml craftbukkit-*.jar start.sh advertise.py eula.txt /bukkit/
+#ADD BuildTools.jar /bukkit/
+#RUN java -jar BuildTools.jar --rev 1.13.2
+ADD server.properties commands.yml craftbukkit-*.jar start.sh advertise.py eula.txt /bukkit/
 
 COPY plugins plugins/
 
