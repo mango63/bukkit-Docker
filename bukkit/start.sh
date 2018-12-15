@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Start server advertiser
 HOSTNAME=$( grep -o -P '(?<=motd=).*' server.properties )
