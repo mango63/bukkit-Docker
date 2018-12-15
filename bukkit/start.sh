@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Start server advertiser
 HOSTNAME=$( grep -o -P '(?<=motd=).*' server.properties )
@@ -8,4 +8,4 @@ python3 advertise.py "$HOSTNAME" &
 
 # Start server itself
 
-exec java -Xms4G -Xmx4G -jar craftbukkit-1.13.2.jar nogui
+exec java -Xms4G -Xmx4G -jar craftbukkit-${BUKKIT_VERSION}.jar nogui
