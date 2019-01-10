@@ -20,7 +20,7 @@ RUN wget -O BuildTools.jar \
     java -jar BuildTools.jar --rev $BUKKIT_VERSION
 
 FROM jdk as final
-ADD server.properties commands.yml start.sh advertise.py eula.txt /bukkit/
+ADD server.properties commands.yml start.sh advertise.py eula.txt settings.sh /bukkit/
 COPY plugins plugins/
 COPY --from=build /build/craftbukkit-*.jar .
 RUN chown bukkit:bukkit * -R
