@@ -182,8 +182,15 @@ components:
     logourl: "pax.png"
     linkurl: "http://www.paxaustralia.com.au"
     Valid positions: top-left, top-right, bottom-left, bottom-right
-    position: bottom-right
+    position: bottom-left
 
+  - class: org.dynmap.ClientComponent
+    type: logo
+    text: "RF LAN"
+    logourl: "rflan_logo.png"
+    linkurl: "https://www.rflan.org"
+    Valid positions: top-left, top-right, bottom-left, bottom-right
+    position: bottom-right
 
   #- class: org.dynmap.ClientComponent
   #  type: inactive
