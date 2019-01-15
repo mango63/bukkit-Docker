@@ -23,6 +23,7 @@ FROM jdk as final
 ADD server.properties commands.yml start.sh advertise.py eula.txt /bukkit/
 COPY plugins plugins/
 COPY --from=build /build/craftbukkit-*.jar .
+RUN apt-get install nano
 RUN chown bukkit:bukkit * -R
 USER bukkit
 

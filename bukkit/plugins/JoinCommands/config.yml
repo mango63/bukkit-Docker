@@ -10,6 +10,7 @@
 # On the dev.bukkit.org project, Any amount helps, thank you!                                                               
 ##################################################################################################
 
-JoinCommands:
-    - start
-    - plot home
+joincommands:
+- me Eelcome To Rflan Build Server
+- start
+- plot home
