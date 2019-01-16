@@ -13,7 +13,7 @@ join commands:
     #
     # Valid Placeholders:
     # - {player}: The name of the player that joined
-    command: 'msg {player} Welcome to the server!'
+    command: 'msg {player} Get Ready TO Build :) '
     
     # How long to wait after the player has joined
     # This is in ticks, so 20 = 1 second
@@ -25,13 +25,13 @@ join commands:
     
     # Should this command only execute the first time a player joins?
     # Set this to false to execute on every join
-    first join only: true
+    first join only: false
     
-  #exampleCommand2:
-  #  command: '[PLAYER]suicide'
-  #  delay: 40
-  #  permission: 'jc.we.hate.you'
-  #  first join only: false
+  exampleCommand2:
+    command: '[PLAYER]start'
+    delay: 40
+    permission: ''
+    first join only: false
   
   #examplecommand3;
   #  command: '[PBUNGEE]server factions'
