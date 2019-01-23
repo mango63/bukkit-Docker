@@ -2,25 +2,31 @@
 
 NOT WINDOWS FREINDLY (to fix at some point)
 
-to be used with Open Source Lan:
+Based off Open Source Lan:
 
 https://github.com/OpenSourceLAN/gameservers-docker
 
+Credit to SirSquidness & Piorax for there massive support
+
+# Set-up / Dynmap
+
 To set up server run the following commands in console, wait till previous has completed before issuing next command:
-1. /buildplotworld
-2. /buildworld
-3. /buildrender
+1. /buildplotworld        // This generates the chuncks for plotworld
+2. /buildworld            // This generates the chuncks for world
+3. /buildrender           // This renders everything
 
 once rendered Dynmap is on <IP>:8123
+
+# Troubleshooting
   
-For players to start building get them to issue the command /start
+For players that have issues when logging in, To start building get them to issue the command /start
 
-docker exec -it bukkit_1 bash then
+# Customisation
 
-change in each container once created due to custom file being overridden on first boot
+To edit a live container use, docker exec -it bukkit_X bash (where X is you server no.)
 
-to change Logo background:
- 1. go to bukkit\plugins\dynmap\web\css
- 2. Edit line 327 change color to desired color 
+To change Logo background:
+ 1.  Go to bukkit\plugins\dynmap\web\css
+ 2.  Edit line 327 change color to desired color 
  3.  Edit like 328 change border to desied setting
- 
+
