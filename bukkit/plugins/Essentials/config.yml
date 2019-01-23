@@ -605,9 +605,9 @@ protect:
       squid: false
       wolf: false
       mushroom_cow: false
-      snowman: false
+      snowman: true
       ocelot: false
-      iron_golem: false
+      iron_golem: true
       villager: false
       wither: false
       bat: false
