@@ -61,7 +61,7 @@ heal-cooldown: 60
 
 # What to prevent from /item and /give.
 # e.g item-spawn-blacklist: 10,11,46
-item-spawn-blacklist:
+item-spawn-blacklist: 344
 
 # Set this to true if you want permission based item spawn rules.
 # Note: The blacklist above will be ignored then.
@@ -686,7 +686,7 @@ protect:
   # 10 = lava :: 11 = still lava :: 46 = TNT :: 327 = lava bucket
   alert:
     on-placement: 10,11,46,327
-    on-use: 327
+    on-use: 327,344
     on-break:
 
   blacklist:
@@ -695,7 +695,7 @@ protect:
     placement: 10,11,46,327
 
     # Which items should people be prevented from using?
-    usage: 327
+    usage: 327,344 
 
     # Which blocks should people be prevented from breaking?
     break:
@@ -704,7 +704,7 @@ protect:
     piston:
 
     # Which blocks should not be dispensed by dispensers
-    dispenser:
+    dispenser: 344
 
 ############################################################
 # +------------------------------------------------------+ #
