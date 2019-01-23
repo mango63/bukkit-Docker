@@ -1,4 +1,4 @@
-# Set-up / Notes to Self
+# Special Mentions
 
 NOT WINDOWS FREINDLY (to fix at some point)
 
@@ -7,8 +7,15 @@ Based off Open Source Lan:
 https://github.com/OpenSourceLAN/gameservers-docker
 
 Credit to SirSquidness & Piorax for there massive support
+# Current Setup
 
-# Set-up / Dynmap
+When player connect they are allocated a plot and they can only build in that plot.
+
+I have disabled the use/creation of of egg's and golems due to players spawning mobs to lag out servers
+This can be change see Customisation
+
+
+# Setup / Dynmap
 
 To set up server run the following commands in console, wait till previous has completed before issuing next command:
 1. /buildplotworld        // This generates the chuncks for plotworld
@@ -30,3 +37,12 @@ To change Logo background:
  2.  Edit line 327 change color to desired color 
  3.  Edit like 328 change border to desied setting
 
+To edit what items are banned:
+1.  Go to bukkit\plugins\Essentials
+2.  Edit config.yml
+
+# List of things to fix
+
+- Make it so plot world is generated on the creation of the server
+- Make it so that plot world can be configured to hosts liking
+- Find a better way of managing Lag Machines

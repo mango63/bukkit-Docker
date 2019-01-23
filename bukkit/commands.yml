@@ -35,7 +35,6 @@ aliases:
   - wb plotworld fill $1-
   - wb fill confirm $1-
   - wb clear all
-
   buildworld:
   - wb dynmap off $1-
   - wb shape round $1-
@@ -43,7 +42,6 @@ aliases:
   - wb plotworld fill $1-
   - wb fill confirm $1-
   - wb clear all
-
   buildrender:
   - dynmap fullrender plotworld $1-
   - dynmap fullrender world $1-
