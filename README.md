@@ -14,7 +14,7 @@ When player connect they are allocated a plot and they can only build in that pl
 I have disabled the use/creation of of egg's and golems due to players spawning mobs to lag out servers
 This can be change see Customisation.
 
-Currently show Pax Logo Bottom-left and RFlan logo on the Bottem-right
+Currently show Pax Logo Bottom-left and RFlan logo on the Bottom-right
 
 # Setup / Dynmap
 
