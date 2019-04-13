@@ -11,7 +11,7 @@ Credit to SirSquidness & Piorax for there massive support
 
 When player connect they are allocated a plot and they can only build in that plot.
 
-I have disabled the use/creation of of egg's and golems due to players spawning mobs to lag out servers
+I have disabled the use/creation of of egg's, golem's, minecart's and weither's due to players spawning mobs to lag out servers
 This can be change see Customisation.
 
 Currently show Pax Logo Bottom-left and RFlan logo on the Bottom-right
@@ -28,6 +28,9 @@ once rendered Dynmap is on <IP>:8123
 # Troubleshooting
   
 For players that have issues when logging in, To start building get them to issue the command /start
+if player marks polt as done /plot continue will allow them to continue
+to run a minecraft server command run : /minecraft:command 
+
 
 # Customisation
 
