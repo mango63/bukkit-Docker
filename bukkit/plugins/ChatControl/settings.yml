@@ -259,7 +259,7 @@ Rules:
   
     # Since Minecraft 1.7x, every message is a chat component. Unpacking it will bring better/more expected results.
     # Disable if experiencing issues with chat formatting plugins. Messages with hover/click effects won't be checked.
-    Deserialize_Json: true
+    Deserialize_Json: false
 
 Console:
   Filter:

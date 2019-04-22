@@ -126,6 +126,8 @@ ratings:
   rating_not_done: $2You can only rate finished plots.
   rating_not_owned: $2You cannot rate a plot that is not claimed by anyone
   ratings_purged: $2Purged ratings for this plot
+  rating_disliked: $4You successfully disliked plot $2%s
+  rating_liked: $4You successfully liked plot $2%s
 tutorial:
   rate_this: $2Rate this plot!
   comment_this: '$2Leave some feedback on this plot: %s'
@@ -164,6 +166,7 @@ schematics:
   schematic_valid: $2That is a valid schematic
   schematic_paste_failed: $2Failed to paste the schematic
   schematic_paste_success: $4The schematic pasted successfully
+  schematic_list: '$4Saved Schematics: $1%s'
 titles:
   title_entered_plot: '$1Plot: %world%;%x%;%z%'
   title_entered_plot_sub: $4Owned by %s
@@ -272,6 +275,7 @@ debug:
   debug_header: $1Debug Information&-
   debug_section: $2>> $1&l%val%
   debug_line: $2>> $1%var%$2:$1 %val%&-
+  requires_unmerged: $2The plot cannot be merged
 invalid:
   not_valid_data: $2That's not a valid data id.
   not_valid_block: '$2That''s not a valid block: %s'
@@ -320,6 +324,9 @@ info:
   plot_user_list: ' $1%user%$2,'
   plot_flag_list: $1%s0:%s1$2
   info_syntax_console: $2/plot info X;Y
+  server: Server
+  plot_info_hidden: $2You cannot view the information about this plot
+  plot_info_likes: $1Like Ratio:$2 %likes%%
 working:
   generating_component: $1Started generating component from your settings
   clearing_plot: $2Clearing plot async.
@@ -400,6 +407,7 @@ help:
   help_info_item: $1/plots help %category% $3- $2%category_desc%
   help_item: $1%usage% [%alias%]&- $3- $2%desc%&-
   direction: '$1Current direction: %dir%'
+  help_display_all_commands: Display all commands
 grants:
   granted_plots: '$1Result: $2%s $1grants left'
   granted_plot: $1You granted %s0 plot to $2%s1
@@ -408,3 +416,27 @@ grants:
   custom_string: '-'
 near:
   plot_near: '$1Players: %s0'
+generator_bucket:
+  bucket_entries_ignored: $2Total bucket values add up to 1 or more. Blocks without
+    a spcified chance will be ignored
+category:
+  command_category_claiming: Claiming
+  command_category_telepport: Teleport
+  command_category_settings: Protection
+  command_category_chat: Chat
+  command_category_schematic: Web
+  command_category_appearance: Cosmetic
+  command_category_info: Info
+  command_category_debug: Debug
+  command_category_administration: Admin
+legacyconfig:
+  legacy_config_found: A legacy configuration file was detected. Conversion will be
+    attempted.
+  legacy_config_backup: A copy of worlds.yml $1have been saved in the file worlds.yml.old$1.
+  legacy_config_replaced: '> %s has been replaced with %s'
+  legacy_config_done: The conversion has finished. PlotSquared will now be disabled
+    and the new configuration file will be used at next startup. Please review the
+    new worlds.yml file. Please note that schematics will not be converted, as we
+    are now using WorldEdit to handle schematics. You need to re-generate the schematics.
+  legacy_config_conversion_failed: Failed to convert the legacy configuration file.
+    See stack trace for information.

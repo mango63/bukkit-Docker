@@ -3,13 +3,11 @@ worlds:
     road:
       width: 7
       height: 64
-      block: '5'
+      block: oak_planks:100
     plot:
       size: 32
-      floor:
-      - '2'
-      filling:
-      - '3'
+      floor: grass_block
+      filling: dirt
       height: 64
       biome: FOREST
       auto_merge: false
@@ -17,9 +15,9 @@ worlds:
       create_signs: true
     wall:
       height: 64
-      filling: '1:0'
-      block_claimed: '44:1'
-      block: '44'
+      filling: granite:100
+      block_claimed: sandstone_slab:100
+      block: stone_slab:100
     home:
       default: side
       allow-nonmembers: false
@@ -53,3 +51,4 @@ worlds:
     mob_spawner_spawning: false
     flags: {}
     misc_spawn_unowned: false
+configuration_version: post_flattening

@@ -559,3 +559,10 @@ debugimportworlds:
   usage: ''
   description: Import worlds by player name
   confirmation: false
+weanywhere:
+  aliases:
+  - weanywhere
+  - wea
+  usage: /plot weanywhere
+  description: Force bypass of WorldEdit
+  confirmation: false
