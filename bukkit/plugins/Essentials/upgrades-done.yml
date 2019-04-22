@@ -7,3 +7,5 @@ updateUsersPowerToolsFormat: true
 updateUsersHomesFormat: true
 deleteOldItemsCsv: true
 banFormatChange: true
+kitsyml: true
+userMapRepaired: true

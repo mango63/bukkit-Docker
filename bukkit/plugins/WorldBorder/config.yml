@@ -1,13 +1,13 @@
 cfg-version: 11
 message: '&cYou have reached the edge of this world.'
-round-border: true
+round-border: false
 debug-mode: false
 whoosh-effect: true
 portal-redirection: true
 knock-back-dist: 3.0
 timer-delay-ticks: 5
 remount-delay-ticks: 0
-dynmap-border-enabled: true
+dynmap-border-enabled: false
 dynmap-border-message: The border of the world.
 player-killed-bad-spawn: false
 deny-enderpearl: true

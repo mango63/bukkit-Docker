@@ -13,8 +13,7 @@ join commands:
     #
     # Valid Placeholders:
     # - {player}: The name of the player that joined
-    command: 'msg {player} Get Ready TO Build :) '
-    
+    command: 'msg {player} Get ready to build :) '
     # How long to wait after the player has joined
     # This is in ticks, so 20 = 1 second
     delay: 20
@@ -31,7 +30,7 @@ join commands:
     command: '[PLAYER]start'
     delay: 40
     permission: ''
-    first join only: false
+    first join only: true
   
   #examplecommand3;
   #  command: '[PBUNGEE]server factions'

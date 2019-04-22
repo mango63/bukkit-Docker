@@ -37,7 +37,7 @@ to run a minecraft server command run : /minecraft:command
 To edit a live container use, docker exec -it bukkit_X bash (where X is you server no.)
 
 To change Logo background:
- 1.  Go to bukkit\plugins\dynmap\web\css
+ 1.  Go to bukkit\plugins\dynmap\web\css\leaflet.css
  2.  Edit line 327 change color to desired color 
  3.  Edit like 328 change border to desied setting
 

@@ -91,7 +91,7 @@ warn-on-smite: true
 # When a command conflicts with another plugin, by default, Essentials will try to force the OTHER plugin to take priority.
 # Commands in this list, will tell Essentials to 'not give up' the command to other plugins.
 # In this state, which plugin 'wins' appears to be almost random.
-#
+
 # If you have two plugin with the same command and you wish to force Essentials to take over, you need an alias.
 # To force essentials to take 'god' alias 'god' to 'egod'.
 # See http://wiki.bukkit.org/Commands.yml#aliases for more information.
@@ -562,9 +562,9 @@ protect:
     flint-fire: false
     lightning-fire-spread: true
     portal-creation: false
-    tnt-explosion: false
+    tnt-explosion: true
     tnt-playerdamage: false
-    tnt-minecart-explosion: false
+    tnt-minecart-explosion: true
     tnt-minecart-playerdamage: false
     fireball-explosion: false
     fireball-fire: false
@@ -695,7 +695,7 @@ protect:
     placement: 10,11,46,327,328,342,343,408,407,422
 
     # Which items should people be prevented from using?
-    usage: 327,344,328,342,343,408,407,422 
+    usage: 327,344,328,342,343,408,407,422
 
     # Which blocks should people be prevented from breaking?
     break:

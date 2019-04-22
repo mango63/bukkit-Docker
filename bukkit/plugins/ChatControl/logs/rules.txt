@@ -1,4 +1,0 @@
-[20.04.2019 15:42:33] Mango63: Rule {ID=/op,Match='^/op\b'} caught message: /op
-[20.04.2019 15:42:46] Mango63: Rule {ID=/gm,Match='^/(gm|gamemode)'} caught message: /gm
-[20.04.2019 15:42:52] Mango63: Rule {ID=/gm,Match='^/(gm|gamemode)'} caught message: /gm s
-[20.04.2019 15:46:03] Mango63: Rule {ID=/gm,Match='^/(gm|gamemode)'} caught message: /gm

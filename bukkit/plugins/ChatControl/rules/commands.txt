@@ -32,3 +32,11 @@ match ^/trade
 ignore gamemode survival
 then warn &cThis command only accessible in survival mode!
 then deny
+
+match ^/pex\b
+ignore perm chatcontrol.bypass.rules
+id /pex
+then warn &bYes, we are giving just give players all the permissions. Seriously, what did you expect?!
+then deny
+then log
+

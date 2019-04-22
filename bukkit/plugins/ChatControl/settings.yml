@@ -60,12 +60,12 @@ Anti_Spam:
 
   Commands:
     # Delay in seconds. Set to 0 to disable.
-    Delay_Between_Commands: 2
+    Delay_Between_Commands: 0
     
     # If a message is similar (in percents) to the previous one, block it.
     # Set to 0 or 100 to disable.
     # We keep in mind that commands like /tell includes always name, making the check less annonying.
-    Similar_Percentage_Block: 80
+    Similar_Percentage_Block: 0
  
     # Commands ignored from the delay check.
     Whitelist_Similarity:
@@ -74,15 +74,18 @@ Anti_Spam:
     - t
     - w
     - r
+    - mail
+    - m
  
     # Commands ignored from the similarity check.
     Whitelist_Delay:
     - spawn
     - home
+    - mail
 
   Chat:
     # Delay in seconds. Set to 0 to disable.
-    Delay_Between_Messages: 1
+    Delay_Between_Messages: 0
 
     # If a command is similar (in percents) to the previous one, block it.
     # Set to 0 or 100 to disable.

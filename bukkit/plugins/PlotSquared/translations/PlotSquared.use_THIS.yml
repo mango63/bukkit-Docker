@@ -2,6 +2,7 @@ confirm:
   failed_confirm: $2You have no pending actions to confirm!
   requires_confirm: '$2Are you sure you wish to execute: $1%s$2?&-$2This cannot be
     undone! If you are sure: $1/plot confirm'
+  expired_confirm: $2Confirmation has expired, please run the command again!
 move:
   move_success: $4Successfully moved plot.
   copy_success: $4Successfully copied plot.
@@ -124,6 +125,7 @@ ratings:
   rating_not_your_own: $2You cannot rate your own plot
   rating_not_done: $2You can only rate finished plots.
   rating_not_owned: $2You cannot rate a plot that is not claimed by anyone
+  ratings_purged: $2Purged ratings for this plot
 tutorial:
   rate_this: $2Rate this plot!
   comment_this: '$2Leave some feedback on this plot: %s'
@@ -183,6 +185,7 @@ alias:
   missing_alias: $2You need to specify an alias
   alias_too_long: $2The alias must be < 50 characters in length
   alias_is_taken: $2That alias is already taken
+  alias_removed: $2Plot alias removed
 position:
   missing_position: '$2You need to specify a position. Possible values: $1none'
   position_set: $1Home position set to your current location
@@ -241,6 +244,7 @@ errors:
   wait_for_timer: $2A setblock timer is bound to either the current plot or you. Please
     wait for it to finish
   invalid_command_flag: '$2Invalid command flag: %s0'
+  not_loaded: $2The plot could not be loaded
 paste:
   debug_report_created: '$1Uploaded a full debug to: $1%url%'
 purge:
@@ -279,6 +283,7 @@ invalid:
   no_such_plot: $2There is no such plot
   player_has_not_been_on: $2That player hasn't been in the plotworld
   found_no_plots: $2Found no plots with your search query
+  found_no_plots_for_player: '$2No plots found for player: %s'
 camera:
   camera_started: $2You have entered camera mode for plot $1%s
   camera_stopped: $2You are no longer in camera mode
@@ -339,6 +344,7 @@ chat:
   plot_chat_forced: $2This world forces everyone to use plot chat.
   plot_chat_on: $4Plot chat enabled.
   plot_chat_off: $4Plot chat disabled.
+  plot_chat_spy_format: '$2[$1Plot Spy$2][$1%plot_id%$2] $1%sender%$2: $1%msg%'
 deny:
   denied_removed: $4You successfully undenied the player from this plot
   denied_added: $4You successfully denied the player from this plot
@@ -381,6 +387,7 @@ member:
 owner:
   set_owner: $4You successfully set the plot owner
   now_owner: $4You are now owner of plot %s
+  set_owner_cancelled: $2The setowner action was cancelled
 signs:
   owner_sign_line_1: '$1ID: $1%id%'
   owner_sign_line_2: '$1Owner:'

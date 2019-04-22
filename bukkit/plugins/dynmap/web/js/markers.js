@@ -27,11 +27,8 @@ componentconstructors['markers'] = function(dynmap, configuration) {
 			
 	function loadmarkers(world) {
 		removeAllMarkers();
-		var url = dynmap.options.url.markers;
-		if(url.indexOf('?') >= 0)
-			url += escape('_markers_/marker_'+world+'.json');
-		else
-			url += '_markers_/marker_'+world+'.json';
+		var url = concatURL(dynmap.options.url.markers, '_markers_/marker_'+world+'.json');
+		
 		$.getJSON(url, function(data) {
 			var ts = data.timestamp;
 			$.each(data.sets, function(name, markerset) {
@@ -79,6 +76,8 @@ componentconstructors['markers'] = function(dynmap, configuration) {
 					createCircle(ms, ms.circles[cname], ts);
 				});
 			});
+			
+			$(dynmap).trigger('markersupdated', [dynmapmarkersets]);
 		});
 	}
 	
@@ -100,11 +99,8 @@ componentconstructors['markers'] = function(dynmap, configuration) {
 
 			var markerPosition = getPosition(marker);
 			marker.our_layer.setLatLng(markerPosition);
-			var url = dynmap.options.url.markers;
-			if(url.indexOf('?') >= 0)
-				url += escape('_markers_/'+marker.icon+'.png');
-			else
-				url += '_markers_/'+marker.icon+'.png';
+			var url = concatURL(dynmap.options.url.markers, '_markers_/'+marker.icon+'.png');
+			
 			$(div)
 				.addClass('Marker')
 				.addClass('mapMarker')
@@ -135,7 +131,7 @@ componentconstructors['markers'] = function(dynmap, configuration) {
 	}
 
 	function updateMarker(set, marker, mapzoom) {
-		if (set && marker) {
+		if (set && marker && marker.our_layer) {
 			// marker specific zoom supercedes set specific zoom
 			var minzoom = (marker.minzoom >= 0) ? marker.minzoom : set.minzoom;
 			var maxzoom = (marker.maxzoom >= 0) ? marker.maxzoom : set.maxzoom;
@@ -447,7 +443,7 @@ componentconstructors['markers'] = function(dynmap, configuration) {
 		}
 		else if(msg.msg == 'circleupdated') {
 			var set = dynmapmarkersets[msg.set];
-			deleteMarker(set, set.circle[msg.id]);
+			deleteMarker(set, set.circles[msg.id]);
 
 			var circle = { x: msg.x, y: msg.y, z: msg.z, xr: msg.xr, zr: msg.zr, label: msg.label, markup: msg.markup, desc: msg.desc,
 				color: msg.color, weight: msg.weight, opacity: msg.opacity, fillcolor: msg.fillcolor, fillopacity: msg.fillopacity, minzoom: msg.minzoom || -1, maxzoom: msg.maxzoom || -1 };
@@ -456,12 +452,14 @@ componentconstructors['markers'] = function(dynmap, configuration) {
 		}
 		else if(msg.msg == 'circledeleted') {
 			var set = dynmapmarkersets[msg.set];
-			deleteMarker(set, set.circle[msg.id]);
-			delete set.circle[msg.id];
+			deleteMarker(set, set.circles[msg.id]);
+			delete set.circles[msg.id];
 		}
+		
+		$(dynmap).trigger('markersupdated', [dynmapmarkersets]);
 	});
 	
-    // Remove marker on start of map change
+    // Remove markers on start of map change
 	$(dynmap).bind('mapchanging', function(event) {
 		$.each(dynmapmarkersets, function(setname, set) {
 			$.each(set.markers, function(mname, marker) {
@@ -478,7 +476,7 @@ componentconstructors['markers'] = function(dynmap, configuration) {
 			});
 		});
 	});
-    // Remove marker on map change - let update place it again
+    // Recreate markers after map change
 	$(dynmap).bind('mapchanged', function(event) {
 		var zoom = dynmap.map.getZoom();
 		$.each(dynmapmarkersets, function(setname, set) {
@@ -520,5 +518,4 @@ componentconstructors['markers'] = function(dynmap, configuration) {
 	});
 	
 	loadmarkers(dynmap.world.name);
-
 };

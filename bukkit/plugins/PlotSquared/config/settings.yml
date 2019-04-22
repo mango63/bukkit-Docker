@@ -1,7 +1,10 @@
-# These first 4 aren't configurable
+# These first 7 aren't configurable
 issues: "https://github.com/IntellectualSites/PlotSquared/issues"
+suggestion: "https://github.com/IntellectualSites/PlotSquaredSuggestions"
 wiki: "https://github.com/IntellectualSites/PlotSquared/wiki"
-version: "3.5.0"
+date: "20 Nov 2018 00:00:00 GMT"
+build: "https://ci.athion.net/job/PlotSquared/2049"
+commit: "https://github.com/IntellectualSites/PlotSquared/commit/302051a"
 platform: "Bukkit"
 # Show additional information in console
 debug: true
@@ -21,7 +24,7 @@ enabled-components:
   commands: true
   # The UUID cacher is used to resolve player names
   uuid-cache: true
-  # Notify players of updates
+  # The plugin auto updater
   updater: true
   # Stores user metadata in a database
   persistent-meta: true
@@ -43,11 +46,16 @@ enabled-components:
   plot-expiry: true
   # Processes chunks (trimming, or entity/tile limits) 
   chunk-processor: false
-  # Kill mobs or vehicles on roads
+  # Kill mobs on roads
   kill-road-mobs: false
+  # Kill items on roads
+  kill-road-items: false
+  # Kill vehicles on roads
   kill-road-vehicles: false
   # Notify a player of any missed comments upon plot entry
   comment-notifier: false
+  # Let player's claim entire worlds with PlotSquared
+  worlds: false
   # Actively purge invalid database entries
   database-purger: false
   # Delete plots when a player is banned
@@ -65,16 +73,22 @@ redstone:
   disable-unoccupied: false
   # Disable redstone when all owners/trusted/members are offline
   disable-offline: false
+  # Detect and cancel invalid pistons on the edge of plots (e.g. placed with WorldEdit)
+  detect-invalid-edge-pistons: false
 
 teleport:
   # Teleport to your plot on death
-  on-death: false
+  on-death: true
   # Teleport to your plot on login
   on-login: true
   # Add a teleportation delay to all commands
   delay: 0
   # The visit command is ordered by world instead of globally
   per-world-visit: false
+
+confirmation:
+  # Teleport to your plot on death
+  confirmation-timeout-seconds: 20
 
 # Switching from PlotMe?
 plotme:
@@ -105,10 +119,15 @@ done:
   counts-towards-limit: true
 
 web:
-  # We are already hosting a web interface for you:
+  # The web interface for schematics
+  #  - All schematics are anonymous and private
+  #  - Downloads can be deleted by the user
+  #  - Supports plot uploads, downloads and saves
   url: "http://empcraft.com/plots/"
-  # The ip that will show up in the interface
-  server-ip: "Blah"
+  # The web interface for assets
+  #  - All schematics are organized and public
+  #  - Assets can be searched, selected and downloaded
+  assets: "https://empcraft.com/assetpack/"
 
 # Configure the paths that will be used
 paths:
@@ -143,6 +162,7 @@ auto-clear:
     required-plots: -1
     confirmation: true
     days: 7
+    skip-account-age-days: -1
     worlds: 
     - "*"
     # See: https://github.com/IntellectualSites/PlotSquared/wiki/Plot-analysis

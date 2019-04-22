@@ -1,8 +1,8 @@
-spawns:
-  default:
+spawns: 
+  default: 
     world: plotworld
-    x: 0.
+    x: 0.47806633994212494
     y: 65.0
-    z: 0.
-    yaw: 190.2016
-    pitch: -2.4002993
+    z: 0.8262073634043544
+    yaw: 328.94232
+    pitch: 89.10051

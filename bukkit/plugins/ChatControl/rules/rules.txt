@@ -231,6 +231,10 @@ handle as swear
 match \b(d+(\W|\d|_)*a+(\W|\d|_)*f+(\W|\d|_)*u+(\W|\d|_)*q+(\W|\d|_)*) 
 handle as swear
 
+# Blocks 'arab'
+match \b(a+(\W|\d|_)*r+(\W|\d|_)*a+(\W|\d|_)*b+(\W|\d|_)*)
+handle as swear
+
 # ---------------- Following rules are commented out. Remove # to enable them ----------------
 
 # Blocks 'sex'
