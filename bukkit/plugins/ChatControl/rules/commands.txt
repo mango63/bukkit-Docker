@@ -40,3 +40,8 @@ then warn &bYes, we are giving just give players all the permissions. Seriously,
 then deny
 then log
 
+match ^//\b
+then warn &bYes everyone can be a troll. Seriously, what did you expect?!
+then deny
+then log
+
