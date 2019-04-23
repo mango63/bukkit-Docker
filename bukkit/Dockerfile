@@ -5,9 +5,9 @@ ARG java_version=8
 ENV JAVA_VERSION=${java_version}
 # todo: collapse these to single command
 RUN apt-get install -y software-properties-common \ 
-    && apt-add-repository ppa:webupd8team/java && \
+    && apt-add-repository ppa:openjdk-r/ppa && \
        apt-get update
-RUN echo "yes" | apt-get install -y oracle-java${JAVA_VERSION}-installer
+RUN echo "yes" | apt-get install -y openjdk-${JAVA_VERSION}-jdk
 RUN adduser bukkit && mkdir /bukkit && chown bukkit:bukkit /bukkit -R
 WORKDIR /bukkit
 
