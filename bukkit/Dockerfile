@@ -1,5 +1,5 @@
 FROM base:latest AS jdk
-ARG bukkit_version=1.13.2
+ARG bukkit_version=1.14.4
 ENV BUKKIT_VERSION=${bukkit_version}
 ARG java_version=8
 ENV JAVA_VERSION=${java_version}
@@ -22,7 +22,7 @@ RUN wget -O BuildTools.jar \
 FROM jdk as final
 ADD server.properties commands.yml start.sh advertise.py eula.txt /bukkit/
 COPY plugins plugins/
-COPY --from=build /build/craftbukkit-*.jar .
+COPY --from=build /build/spigot-*.jar .
 RUN apt-get install nano
 RUN chown bukkit:bukkit * -R
 USER bukkit
