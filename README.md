@@ -24,12 +24,16 @@ To set up server run the following commands in console, wait till previous has c
 3. /buildrender           // This renders everything
 
 once rendered Dynmap is on <IP>:8123
+  
+A /reload may be required to get chat filter to work.
 
 # Troubleshooting
   
-For players that have issues when logging in, To start building get them to issue the command /start
-if player marks polt as done /plot continue will allow them to continue
-to run a minecraft server command run : /minecraft:command 
+For players that have issues when logging in, To start building get them to issue the command /start,
+
+If player marks polt as done /plot continue will allow them to continue,
+
+To run a minecraft server command run : /minecraft:command,
 
 
 # Customisation
