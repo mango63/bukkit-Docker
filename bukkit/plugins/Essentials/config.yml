@@ -61,7 +61,7 @@ heal-cooldown: 60
 
 # What to prevent from /item and /give.
 # e.g item-spawn-blacklist: 10,11,46
-item-spawn-blacklist: 344
+item-spawn-blacklist:
 
 # Set this to true if you want permission based item spawn rules.
 # Note: The blacklist above will be ignored then.
@@ -685,17 +685,18 @@ protect:
   # You can find a list of IDs in plugins/Essentials/items.csv after loading Essentials for the first time.
   # 10 = lava :: 11 = still lava :: 46 = TNT :: 327 = lava bucket
   alert:
-    on-placement: 10,11,46,327
-    on-use: 327,344
+    on-placement: 
+    on-use:
     on-break:
 
   blacklist:
 
     # Which blocks should people be prevented from placing?
-    placement: 10,11,46,327,328,342,343,408,407,422,333,444,445,446,447,448
+    #(Minecraft Pre Ver 1.14 use Item ID Numbers) placement: 10,11,46,327,328,342,343,408,407,422,333,444,445,446,447,448
+    placement: LAVA,TNT,LAVA_BUCKET,MINECART,OAK_BOAT,CHEST_MINECART,FURNACE_MINECART,TNT_MINECART,HOPPER_MINECART,COMMAND_BLOCK_MINECART,SPRUCE_BOAT,BIRCH_BOAT,JUNGLE_BOAT,ACACIA_BOAT,DARK_OAK_BOAT
 
     # Which items should people be prevented from using?
-    usage: 327,344,328,342,343,408,407,422,333,444,445,446,447,448
+    usage: MINECART,OAK_BOAT,CHEST_MINECART,FURNACE_MINECART,TNT_MINECART,HOPPER_MINECART,COMMAND_BLOCK_MINECART,SPRUCE_BOAT,BIRCH_BOAT,JUNGLE_BOAT,ACACIA_BOAT,DARK_OAK_BOAT
 
     # Which blocks should people be prevented from breaking?
     break:
@@ -704,7 +705,7 @@ protect:
     piston:
 
     # Which blocks should not be dispensed by dispensers
-    dispenser: 344,328,342,343,408,407,422
+    dispenser: MINECART,OAK_BOAT,CHEST_MINECART,FURNACE_MINECART,TNT_MINECART,HOPPER_MINECART,COMMAND_BLOCK_MINECART,SPRUCE_BOAT,BIRCH_BOAT,JUNGLE_BOAT,ACACIA_BOAT,DARK_OAK_BOAT
 
 ############################################################
 # +------------------------------------------------------+ #
