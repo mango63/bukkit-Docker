@@ -1,10 +1,11 @@
 FROM base:latest AS jdk
-ARG bukkit_version=1.14.4
+ARG bukkit_version=1.15.1
 ENV BUKKIT_VERSION=${bukkit_version}
 ARG java_version=8
 ENV JAVA_VERSION=${java_version}
 # todo: collapse these to single command
-RUN apt-get install -y software-properties-common \ 
+RUN sed --in-place --regexp-extended "s/(\/\/)(archive\.ubuntu)/\1au.\2/" /etc/apt/sources.list \
+    && apt-get install -y software-properties-common \ 
     && apt-add-repository ppa:openjdk-r/ppa && \
        apt-get update
 RUN echo "yes" | apt-get install -y openjdk-${JAVA_VERSION}-jdk

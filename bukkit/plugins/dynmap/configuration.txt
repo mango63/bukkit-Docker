@@ -192,6 +192,14 @@ components:
     Valid positions: top-left, top-right, bottom-left, bottom-right
     position: bottom-right
 
+  - class: org.dynmap.ClientComponent
+    type: logo
+    text: "RF LAN"
+    logourl: "lanslide_logo.png"
+    linkurl: "https://www.lanslide.com.au"
+    Valid positions: top-left, top-right, bottom-left, bottom-right
+    position: bottom-right
+
   #- class: org.dynmap.ClientComponent
   #  type: inactive
   #  timeout: 1800 # in seconds (1800 seconds = 30 minutes)
