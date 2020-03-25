@@ -1,0 +1,2 @@
+# LuckPerms UUID lookup cache
+b8c62201-5a91-428f-ba78-a46cb8ec2190:Mango63
