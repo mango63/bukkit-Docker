@@ -8,4 +8,4 @@ python3 advertise.py "$HOSTNAME" &
 
 # Start server itself
 
-exec java -Xms6G -Xmx6G -jar spigot-${BUKKIT_VERSION}.jar nogui
+exec java -Xms6G -Xmx6G -jar spigot-*.jar nogui
