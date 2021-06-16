@@ -32,11 +32,12 @@ RUN unzip proto.zip
 RUN wget -O luckPerm.zip https://ci.lucko.me/view/LuckPerms/job/LuckPerms/lastSuccessfulBuild/artifact/bukkit/loader/build/libs/*zip*/libs.zip
 RUN unzip luckPerm.zip
 RUN wget https://dynmap.us/releases/Dynmap-3.2-beta-1-spigot.jar
-
+RUN wget https://github.com/kangarko/ChatControl-Pro/releases/download/8.10.5/ChatControl-8.10.5.jar
 
 FROM jdk as final
 ADD server.properties commands.yml start.sh advertise.py eula.txt /bukkit/
 COPY plugins plugins/
+COPY --from=build /build/ChatControl-*.jar plugins/
 COPY --from=build /build/spigot-*.jar .
 COPY --from=build /build/Dynmap*.jar plugins/
 COPY --from=build /build/Plot2Dynmap-*.jar plugins/
