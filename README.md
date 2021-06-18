@@ -27,8 +27,8 @@ I have left the config files in place so you will only need to downlaod the pulg
 
 They can be found at the below links :
 
-ChatControlRed:  https://www.mc-market.org/resources/18217/
-PlotSquared v5:  https://www.spigotmc.org/resources/plotsquared-v5.77506/
+ChatControlRed:  https://www.mc-market.org/resources/18217/  
+PlotSquared v5:  https://www.spigotmc.org/resources/plotsquared-v5.77506/ 
 
 # Setup / Dynmap
 
