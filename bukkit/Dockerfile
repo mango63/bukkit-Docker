@@ -33,6 +33,7 @@ RUN wget -O luckPerm.zip https://ci.lucko.me/view/LuckPerms/job/LuckPerms/lastSu
 RUN unzip luckPerm.zip
 RUN wget https://dynmap.us/releases/Dynmap-3.2-beta-1-spigot.jar
 #RUN wget https://github.com/kangarko/ChatControl-Pro/releases/download/8.10.5/ChatControl-8.10.5.jar
+## Moved to Premium version see README for more details
 
 FROM jdk as final
 ADD server.properties commands.yml start.sh advertise.py eula.txt /bukkit/
