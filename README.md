@@ -23,7 +23,6 @@ I have moved from the free version of ChatContorlPro to ChatCtontrolRed.
 
 This means that you will need to manually bash in to the container and download the file your self.
 
-y
 # Setup / Dynmap
 
 To set up server run the following commands in console, wait till previous has completed before issuing next command:
