@@ -10,14 +10,20 @@ Credit to SirSquidness & Piorax for there massive support
 
 # Current Setup
 
-Set up to Work With Minecraft Version 1.14.4 this can be changed via editing files. 
+Set up to Work With Minecraft Version 1.17 this can be changed via editing files. 
 
 When player connect they are allocated a plot and they can only build in that plot.
 
 I have disabled the use and creation of  egg's, golem's, minecart's and weither's due to players spawning mobs to lag out servers
 This can be change see Customisation.
 
-Currently show Pax Logo Bottom-left and RFlan logo on the Bottom-right
+# Chat Control
+
+I have moved from the free version of ChatContorlPro to ChatCtontrolRed.
+
+This means that you will need to manually bash in to the container and download the file your self.
+
+It can be found here : https://www.mc-market.org/resources/18217/
 
 # Setup / Dynmap
 
@@ -27,7 +33,8 @@ To set up server run the following commands in console, wait till previous has c
 3. /buildrender           // This renders everything
 
 once rendered Dynmap is on <IP>:8123
-  
+
+Currently show's Pax AUS Logo Bottom-left and RFlan and LanSLIDE logo on the Bottom-right
 
 # Troubleshooting
   
