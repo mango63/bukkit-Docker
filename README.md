@@ -17,13 +17,18 @@ When player connect they are allocated a plot and they can only build in that pl
 I have disabled the use and creation of  egg's, golem's, minecart's and weither's due to players spawning mobs to lag out servers
 This can be change see Customisation.
 
-# Chat Control
+# ChatControlRed and PlotSquared
 
-I have moved from the free version of ChatContorlPro to ChatCtontrolRed.
+As the above moved from being free to a paid version you will need to download the file's yourself.
 
-This means that you will need to manually bash in to the container and download the file your self.
+This means that you will need to manually bash in to the container and downlaod the file's
 
-It can be found here : https://www.mc-market.org/resources/18217/
+I have left the config files in place so you will only need to downlaod the pulgins
+
+They can be found at the below links :
+
+ChatControlRed:  https://www.mc-market.org/resources/18217/
+PlotSquared v5:  https://www.spigotmc.org/resources/plotsquared-v5.77506/
 
 # Setup / Dynmap
 
@@ -32,7 +37,7 @@ To set up server run the following commands in console, wait till previous has c
 2. /buildworld            // This generates the chuncks for world
 3. /buildrender           // This renders everything
 
-once rendered Dynmap is on <IP>:8123
+once rendered Dynmap is on ServerIP:8123
 
 Currently show's Pax AUS Logo Bottom-left and RFlan and LanSLIDE logo on the Bottom-right
 
@@ -60,6 +65,5 @@ To edit what items are banned:
 
 # List of things to fix
 
-- Make it so plot world is generated on the creation of the server
 - Make it so that plot world can be configured to hosts liking
 - Find a better way of managing Lag Machines
