@@ -36,7 +36,7 @@ RUN wget https://dynmap.us/releases/Dynmap-3.2-beta-1-spigot.jar
 ## Moved to Premium version see README for more details
 
 FROM jdk as final
-ADD server.properties commands.yml start.sh advertise.py eula.txt /bukkit/
+ADD server.properties commands.yml start.sh advertise.py /bukkit/
 COPY plugins plugins/
 #COPY --from=build /build/ChatControl-*.jar plugins/
 COPY --from=build /build/spigot-*.jar .
@@ -51,6 +51,7 @@ COPY --from=build /build/jars/EssentialsXChat*.jar plugins/
 COPY --from=build /build/jars/EssentialsXProtect*.jar plugins/
 COPY --from=build /build/jars/EssentialsXSpawn*.jar plugins/
 COPY --from=build /build/libs/LuckPerms-Bukkit*.jar plugins/
+RUN echo "eula=true" > eula.txt
 
 RUN apt-get install nano
 RUN chown bukkit:bukkit * -R
